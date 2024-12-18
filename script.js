@@ -3,7 +3,7 @@ let turnBox = document.querySelectorAll(".turnBox");
 let boxes = document.querySelectorAll(".box");
 let isGameOver = false;
 
-turnBox[0].style.backgroundColor = "#091E05";
+turnBox[0].style.backgroundColor = "#1a381a";
 
 boxes.forEach((e) => {
 
@@ -42,13 +42,13 @@ function turnChange() {
 if (turn === "X")
 {
     turn = "O";
-    turnBox[1].style.backgroundColor = "#091E05";
+    turnBox[1].style.backgroundColor = "#1a381a";
     turnBox[0].style.backgroundColor = "";
             }
 else
 {
     turn = "X";
-    turnBox[0].style.backgroundColor = "#091E05";
+    turnBox[0].style.backgroundColor = "#1a381a";
     turnBox[1].style.backgroundColor = "";
             }
         }
@@ -113,7 +113,7 @@ function checkDraw() {
 function playAgain() {
     turn = "X";
     isGameOver = false;
-    turnBox[0].style.backgroundColor = "#091E05";
+    turnBox[0].style.backgroundColor = "#1a381a";
     turnBox[1].style.backgroundColor = "";
     boxes.forEach(box => {
         box.innerHTML = "";
